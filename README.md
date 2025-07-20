@@ -59,9 +59,9 @@ WHERE
        
 <img width="1265" height="217" alt="image" src="https://github.com/user-attachments/assets/2725a00d-33d5-4861-822c-d998e507265a" />
 
-        Query-5
+Query-5
 
-        -- Customers whose total spend is above average
+-- Customers whose total spend is above average
         
 SELECT 
     Cust_name, SUM(Amount) AS Total_Spend
