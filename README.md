@@ -2,7 +2,9 @@ This project is to showcase my SQL Queries related to insight generation based o
 
 Query-1
 
--- Total sales by Product Category
+-- Total Sales by Product Category
+
+Insight: Find which product categories bring in the highest total sales and most orders — helps prioritize best-sellers.
 
 SELECT 
     Product_Category,
@@ -17,7 +19,9 @@ ORDER BY Total_Sales DESC;
 
 Query-2
 
--- most commonly ordered product category
+-- Most Commonly Ordered Product Category
+
+Insight: Identify the product category ordered most frequently — reveals what’s in constant demand.
 
 SELECT 
     Product_Category,
@@ -305,6 +309,43 @@ WHERE
     pr.rating = 5;
 
 <img width="364" height="243" alt="image" src="https://github.com/user-attachments/assets/c545dc3f-acad-49fb-986c-d72d74f672a0" />
+
+Query-21
+
+-- Customer at risk of churning (who has not ordered from last 3 momnths)
+
+SELECT 
+    s.User_ID,
+    s.Cust_name,
+    MAX(STR_TO_DATE(s.Date, '%d-%b-%y')) AS last_order_date
+FROM 
+    `project sales` s
+GROUP BY 
+    s.User_ID, s.Cust_name
+HAVING 
+    last_order_date IS NULL 
+    OR last_order_date < CURDATE() - INTERVAL 3 MONTH;
+
+<img width="350" height="249" alt="image" src="https://github.com/user-attachments/assets/c29d784f-ce35-4d82-ab40-95ca7bdcf775" />
+
+Query-22
+
+-- Customer Segmentation (By- Age,Gender)
+
+SELECT 
+    `Age Group`, 
+    Gender, 
+    COUNT(DISTINCT User_ID) AS customer_count 
+FROM 
+    `project sales` 
+GROUP BY 
+    `Age Group`, Gender;
+
+<img width="308" height="238" alt="image" src="https://github.com/user-attachments/assets/9b5678d2-21fc-4ae0-9db8-8b1845cd2c9a" />
+
+
+
+
 
 
 
