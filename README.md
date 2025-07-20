@@ -343,6 +343,28 @@ GROUP BY
 
 <img width="308" height="238" alt="image" src="https://github.com/user-attachments/assets/9b5678d2-21fc-4ae0-9db8-8b1845cd2c9a" />
 
+Query-23
+
+-- Get total orders and average product rating for each product
+
+SELECT 
+    o.Product_ID,
+    COUNT(*) AS order_count,
+    ROUND(AVG(r.Rating), 1) AS avg_rating
+FROM 
+    `project sales` o
+JOIN 
+    product_rating r ON o.Product_ID = r.Product_ID
+GROUP BY 
+    o.Product_ID
+ORDER BY 
+    order_count DESC;
+
+<img width="311" height="238" alt="image" src="https://github.com/user-attachments/assets/ffda4023-2f99-4c86-a492-8be6dfd46c31" />
+
+
+
+
 
 
 
