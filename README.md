@@ -360,7 +360,9 @@ GROUP BY
 ORDER BY 
     order_count DESC;
 
-<img width="311" height="238" alt="image" src="https://github.com/user-attachments/assets/ffda4023-2f99-4c86-a492-8be6dfd46c31" />
+<img width="311" height="238" alt="image" src="https://github.com/user-attachments/assets/ffda4023-2f99-4c86-a492-8be6dfd46c31" />8
+
+
 
 
 
