@@ -362,6 +362,33 @@ ORDER BY
 
 <img width="311" height="238" alt="image" src="https://github.com/user-attachments/assets/ffda4023-2f99-4c86-a492-8be6dfd46c31" />8
 
+Query-24
+
+-- Identifying Duplicate Orders
+
+SELECT 
+    User_ID, Product_ID, Date, COUNT(*)
+FROM
+    `project sales`
+GROUP BY User_ID , Product_ID , Date
+HAVING COUNT(*) > 1;
+
+<img width="355" height="117" alt="image" src="https://github.com/user-attachments/assets/2a5c25a8-c05a-4ea8-b8bb-c12dcf7a2070" />
+
+Query-25
+
+-- Locating Null Values
+
+SELECT * 
+FROM `project sales`
+WHERE Date IS NULL OR User_ID IS NULL OR Amount IS NULL;
+
+<img width="1228" height="187" alt="image" src="https://github.com/user-attachments/assets/429fecdc-5420-407c-955b-81dd876ab9e3" />
+
+
+
+
+
 
 
 
