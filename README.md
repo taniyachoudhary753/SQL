@@ -1,5 +1,6 @@
 " Sales Data Insights & Customer Analytics using SQL "
 
+
 Project Summary:
 
 “ Developed a comprehensive SQL-based analytics project analyzing transactional sales data for a retail domain. Designed and executed complex queries to generate actionable business insights covering sales trends, customer segmentation, product performance, churn prediction, and regional analysis. Provided clear recommendations to drive sales, optimize inventory, and improve customer retention. ”
