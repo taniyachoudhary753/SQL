@@ -1,0 +1,293 @@
+Product_ID,Product_Category,Rating 
+P00125942,Auto,3
+P00110942,Auto,5
+P00118542,Auto,3
+P00237842,Auto,4
+P00057942,Auto,1
+P00057942,Auto,2
+P00018042,Auto,5
+P00205642,Auto,2
+P00031142,Auto,1
+P00200842,Auto,5
+P00119142,Auto,4
+P00080342,Auto,5
+P00324942,Auto,3
+P00289942,Auto,5
+P00004842,Auto,4
+P00029842,Auto,2
+P00029842,Auto,1
+P00180642,Auto,2
+P00181842,Auto,2
+P00101742,Auto,3
+P00271842,Auto,3
+P00317842,Auto,1
+P00282642,Auto,5
+P00234742,Auto,3
+P00058042,Auto,4
+P00190542,Hand & Power Tools,1
+P00119642,Auto,4
+P00111642,Auto,2
+P00293342,Auto,2
+P00220042,Auto,3
+P00346242,Auto,2
+P00080042,Auto,4
+P00111842,Auto,4
+P00238542,Auto,3
+P00048742,Auto,1
+P00310342,Auto,4
+P00249542,Auto,2
+P00156442,Auto,4
+P00144242,Hand & Power Tools,5
+P00122442,Auto,4
+P0096942,Auto,1
+P00201442,Auto,3
+P00036242,Hand & Power Tools,3
+P00113942,Auto,2
+P00121642,Auto,1
+P00105042,Auto,2
+P00141842,Auto,4
+P00115342,Auto,2
+P00220042,Stationery,3
+P00339042,Stationery,5
+P00000642,Stationery,3
+P00302742,Stationery,5
+P00150342,Stationery,5
+P00261542,Stationery,3
+P00261842,Stationery,2
+P00114042,Stationery,3
+P00145042,Stationery,1
+P00121642,Stationery,4
+P00003242,Stationery,3
+P00265242,Stationery,4
+P00046742,Stationery,4
+P00220342,Stationery,2
+P00037042,Stationery,4
+P0096542,Stationery,4
+P00216742,Stationery,1
+P00213742,Stationery,5
+P00130742,Stationery,2
+P00248442,Stationery,2
+P00129542,Stationery,3
+P00261642,Stationery,1
+P00182542,Tupperware,4
+P00248942,Tupperware,4
+P00152742,Stationery,1
+P00302342,Tupperware,1
+P00064042,Stationery,2
+P00173342,Stationery,3
+P00278642,Tupperware,5
+P00142942,Stationery,4
+P00306042,Footwear & Shoes,2
+P00114342,Footwear & Shoes,2
+P00271242,Footwear & Shoes,3
+P00157142,Footwear & Shoes,4
+P00345242,Footwear & Shoes,1
+P00067942,Footwear & Shoes,3
+P00191942,Stationery,5
+P00217442,Footwear & Shoes,1
+P00303242,Tupperware,5
+P00240042,Footwear & Shoes,3
+P00084842,Footwear & Shoes,4
+P00156242,Footwear & Shoes,4
+P00123142,Stationery,4
+P00260442,Footwear & Shoes,1
+P00213742,Footwear & Shoes,2
+P00319942,Footwear & Shoes,4
+P00255842,Tupperware,1
+P00192542,Footwear & Shoes,3
+P00259142,Footwear & Shoes,3
+P00084242,Footwear & Shoes,2
+P00208742,Footwear & Shoes,5
+P00163442,Footwear & Shoes,1
+P00284742,Footwear & Shoes,1
+P00369042,Footwear & Shoes,5
+P00075542,Footwear & Shoes,3
+P00216042,Footwear & Shoes,5
+P00142742,Footwear & Shoes,4
+P00345642,Footwear & Shoes,2
+P00315842,Footwear & Shoes,3
+P00114042,Footwear & Shoes,1
+P00184942,Stationery,5
+P00178242,Footwear & Shoes,4
+P00124642,Footwear & Shoes,2
+P00114142,Footwear & Shoes,2
+P00108942,Footwear & Shoes,2
+P00062842,Footwear & Shoes,1
+P00289942,Stationery,5
+P00113542,Footwear & Shoes,1
+P00294542,Footwear & Shoes,3
+P00087442,Tupperware,4
+P00334242,Footwear & Shoes,2
+P00117142,Footwear & Shoes,2
+P00184042,Stationery,2
+P00368342,Footwear & Shoes,4
+P00309242,Footwear & Shoes,2
+P00315442,Footwear & Shoes,1
+P00101342,Footwear & Shoes,5
+P00232442,Footwear & Shoes,5
+P00033742,Footwear & Shoes,2
+P00288342,Tupperware,3
+P00228142,Footwear & Shoes,5
+P00114942,Footwear & Shoes,4
+P00232242,Footwear & Shoes,3
+P00034742,Footwear & Shoes,4
+P00278042,Footwear & Shoes,4
+P00363542,Footwear & Shoes,3
+P00363542,Footwear & Shoes,3
+P00351042,Footwear & Shoes,3
+P00324342,Footwear & Shoes,5
+P00179742,Footwear & Shoes,1
+P00190242,Footwear & Shoes,5
+P00161442,Footwear & Shoes,2
+P00248142,Tupperware,2
+P00209842,Footwear & Shoes,1
+P00205442,Footwear & Shoes,4
+P00183142,Footwear & Shoes,3
+P00177842,Footwear & Shoes,5
+P00059242,Footwear & Shoes,5
+P00248942,Footwear & Shoes,3
+P00112842,Footwear & Shoes,3
+P00085242,Tupperware,2
+P00127842,Footwear & Shoes,2
+P00242742,Footwear & Shoes,2
+P00183742,Footwear & Shoes,1
+P00304642,Footwear & Shoes,3
+P00057642,Tupperware,2
+P00032042,Footwear & Shoes,1
+P00000142,Footwear & Shoes,1
+P00123842,Furniture,5
+P00130642,Footwear & Shoes,3
+P00146342,Footwear & Shoes,4
+P00120442,Footwear & Shoes,2
+P00148642,Furniture,1
+P00298942,Footwear & Shoes,4
+P00277642,Furniture,5
+P00159442,Footwear & Shoes,2
+P00344542,Tupperware,4
+P00021842,Footwear & Shoes,4
+P00322142,Furniture,4
+P00249542,Footwear & Shoes,5
+P00223642,Footwear & Shoes,2
+P00117842,Footwear & Shoes,2
+P00109842,Footwear & Shoes,3
+P00059442,Footwear & Shoes,3
+P00337442,Footwear & Shoes,2
+P00122442,Tupperware,4
+P00267542,Footwear & Shoes,5
+P00190242,Footwear & Shoes,4
+P00356842,Tupperware,4
+P00349142,Footwear & Shoes,4
+P00359242,Footwear & Shoes,1
+P00016542,Footwear & Shoes,1
+P00334242,Tupperware,4
+P00218642,Furniture,3
+P00110942,Furniture,5
+P00273042,Footwear & Shoes,2
+P00162442,Footwear & Shoes,3
+P00317842,Footwear & Shoes,3
+P00180442,Footwear & Shoes,1
+P00100642,Furniture,3
+P00071442,Furniture,3
+P00100842,Furniture,1
+P00148042,Tupperware,1
+P00227942,Footwear & Shoes,4
+P00120342,Footwear & Shoes,2
+P00180642,Footwear & Shoes,5
+P00193642,Footwear & Shoes,4
+P00033942,Footwear & Shoes,4
+P00015742,Footwear & Shoes,3
+P00296642,Tupperware,1
+P00015542,Furniture,1
+P00112542,Furniture,1
+P00127942,Footwear & Shoes,4
+P00157642,Footwear & Shoes,1
+P00265242,Furniture,1
+P00250342,Footwear & Shoes,2
+P00115142,Furniture,4
+P00274042,Footwear & Shoes,1
+P00249642,Footwear & Shoes,2
+P00113442,Furniture,2
+P00120242,Footwear & Shoes,2
+P0096942,Footwear & Shoes,3
+P00249842,Furniture,4
+P00207742,Tupperware,1
+P00233542,Footwear & Shoes,5
+P00184942,Footwear & Shoes,4
+P00032142,Furniture,4
+P00278642,Footwear & Shoes,3
+P00211242,Furniture,3
+P00323042,Footwear & Shoes,5
+P00233442,Footwear & Shoes,1
+P00153142,Footwear & Shoes,3
+P00068042,Furniture,5
+P0099242,Footwear & Shoes,5
+P00118142,Furniture,3
+P00344842,Furniture,1
+P00123142,Footwear & Shoes,4
+P00036342,Footwear & Shoes,1
+P00319042,Footwear & Shoes,3
+P00127542,Footwear & Shoes,1
+P00127642,Furniture,4
+P00193542,Tupperware,1
+P00153842,Footwear & Shoes,5
+P00304942,Footwear & Shoes,2
+P00227942,Footwear & Shoes,1
+P00173342,Footwear & Shoes,3
+P00277642,Footwear & Shoes,5
+P00346042,Footwear & Shoes,1
+P00269642,Footwear & Shoes,5
+P00018042,Footwear & Shoes,3
+P00295842,Footwear & Shoes,2
+P00109742,Footwear & Shoes,4
+P00129842,Footwear & Shoes,3
+P00182242,Footwear & Shoes,4
+P00346142,Footwear & Shoes,5
+P00057742,Footwear & Shoes,2
+P00215542,Footwear & Shoes,3
+P00158742,Furniture,5
+P00059442,Furniture,1
+P00363342,Footwear & Shoes,1
+P00339842,Furniture,2
+P00111142,Footwear & Shoes,4
+P00324642,Footwear & Shoes,1
+P0095542,Footwear & Shoes,4
+P00160042,Footwear & Shoes,1
+P00115942,Footwear & Shoes,3
+P0096542,Tupperware,5
+P00274042,Footwear & Shoes,2
+P0097142,Footwear & Shoes,3
+P00146042,Footwear & Shoes,1
+P00147042,Furniture,3
+P00351242,Furniture,5
+P00187342,Tupperware,2
+P00054242,Furniture,5
+P00241642,Furniture,1
+P00172842,Footwear & Shoes,1
+P00199442,Footwear & Shoes,2
+P00014542,Footwear & Shoes,4
+P00214142,Furniture,1
+P00182242,Footwear & Shoes,1
+P00050642,Furniture,4
+P00101842,Footwear & Shoes,3
+P00085942,Footwear & Shoes,5
+P00268442,Furniture,3
+P00110942,Footwear & Shoes,5
+P00030442,Furniture,4
+P00102442,Footwear & Shoes,3
+P00361642,Footwear & Shoes,2
+P00118542,Footwear & Shoes,2
+P00265142,Footwear & Shoes,3
+P00213342,Footwear & Shoes,5
+P0097842,Tupperware,3
+P00332442,Furniture,2
+P00041342,Furniture,3
+P00122442,Footwear & Shoes,1
+P00145442,Furniture,1
+P00193842,Furniture,2
+P00176642,Footwear & Shoes,1
+P00006442,Footwear & Shoes,3
+P00274442,Footwear & Shoes,1
+P00270942,Footwear & Shoes,2
+P00111042,Footwear & Shoes,1
+P00184942,Footwear & Shoes,5
+P00226242,Footwear & Shoes,4
