@@ -1,10 +1,16 @@
-This project is to showcase my SQL Queries related to insight generation based on the acquired results
+"Sales Data Insights & Customer Analytics using SQL"
 
-Query-1
+Project Summary:
 
--- Total Sales by Product Category
+“Developed a comprehensive SQL-based analytics project analyzing transactional sales data for a retail domain. Designed and executed 23+ complex queries to generate actionable business insights covering sales trends, customer segmentation, product performance, churn prediction, and regional analysis. Provided clear recommendations to drive sales, optimize inventory, and improve customer retention.”
 
-Insight: Find which product categories bring in the highest total sales and most orders — helps prioritize best-sellers.
+
+
+Query 1: Total Sales by Product Category
+
+Question: Which product categories generate the highest total sales, and how can we prioritize them to maximize revenue?
+
+Business Goal: Identify top revenue-driving product categories to optimize inventory and marketing efforts.
 
 SELECT 
     Product_Category,
@@ -17,11 +23,16 @@ ORDER BY Total_Sales DESC;
 
 <img width="359" height="161" alt="image" src="https://github.com/user-attachments/assets/2c03e078-5429-43bb-9135-a1199a330ad3" />
 
-Query-2
+Insight: Footwear & Shoes dominates sales and orders, with Auto and Furniture trailing. Hand & Power Tools underperforms.
 
--- Most Commonly Ordered Product Category
+Next Step: Prioritize inventory and marketing for Footwear & Shoes, analyze lagging categories for possible improvement or discontinuation.
 
-Insight: Identify the product category ordered most frequently — reveals what’s in constant demand.
+
+Query 2: Most Commonly Ordered Product Category
+
+Question: What are the most frequently ordered product categories, indicating strong customer demand?
+
+Business Goal: Understand customer preferences to improve stock availability and drive repeat purchases.
 
 SELECT 
     Product_Category,
@@ -36,9 +47,16 @@ LIMIT 1;
 
 <img width="495" height="62" alt="image" src="https://github.com/user-attachments/assets/f10870ac-e2e7-466a-aec1-83232f0db4be" />
 
-Query-3
+Insight: Footwear & Shoes leads in both demand and order frequency, indicating strong and consistent customer interest.
 
--- Rank top customers by total spend
+Next Step: Ensure stock availability and explore cross-selling. Use this category's success as a benchmark for others.
+
+
+Query 3: Rank Top Customers by Total Spend
+
+Question: Who are our highest-spending customers, and how can we enhance their loyalty and lifetime value?
+
+Business Goal: Focus retention and upselling strategies on key customers to increase revenue.
 
 SELECT
   Cust_name,
@@ -49,9 +67,16 @@ GROUP BY Cust_name;
 
 <img width="337" height="242" alt="image" src="https://github.com/user-attachments/assets/0102992a-ec3f-49bb-b77c-a93668fe1155" />
 
-Query-4
+Insight: Neola is the highest-spending customer by a large margin, followed by Eugene and Ashutosh. Top 10 customers contribute significantly to revenue.
 
--- Orders placed in the first quarter by Southern zone customers
+Next Step: Launch loyalty programs or special offers for top customers to increase retention and further boost high-value sales.
+
+
+Query 4: Orders in First Quarter by Southern Zone Customers
+
+Question: What are the order patterns from Southern zone customers in Q1, and which states and segments should we target?
+
+Business Goal: Implement regional marketing tactics to capitalize on seasonal demand and geographic strengths.
 
 SELECT 
     *
@@ -63,9 +88,16 @@ WHERE
        
 <img width="1265" height="217" alt="image" src="https://github.com/user-attachments/assets/2725a00d-33d5-4861-822c-d998e507265a" />
 
-Query-5
+Insight: Southern zone customers placed multiple orders mostly from Andhra Pradesh and Karnataka in Q1 of 2025, with diverse product and occupation segments.
 
--- Customers whose total spend is above average
+Next Step: Target Southern region with localized marketing and regional promotions, capitalizing on early-year buying trends.
+
+
+Query 5: Customers Whose Total Spend Is Above Average
+
+Question: Which customers exceed average spending, and how can we personalize engagement to grow their accounts?
+
+Business Goal: Prioritize high-value customer relationships for tailored marketing and enhanced service.
         
 SELECT 
     Cust_name, SUM(Amount) AS Total_Spend
@@ -83,9 +115,16 @@ HAVING SUM(Amount) > (SELECT
 
 <img width="282" height="250" alt="image" src="https://github.com/user-attachments/assets/d8431d7d-973f-43d8-a77d-a2089ee08ab4" />
 
-Query-6
+Insight: Roughly half the customers exceed average total spend, indicating a strong set of high-value accounts.
 
--- Total sales and orders per month
+Next Step: Focus account management and personalized engagement on these above-average spenders to maximize lifetime value.
+
+
+Query 6: Total Sales and Orders Per Month
+
+Question: How do sales and order volumes vary month-to-month, and when should we prepare for sales peaks?
+
+Business Goal: Optimize inventory and promotional calendars according to seasonal sales trends.
 
 SELECT 
     DATE_FORMAT(STR_TO_DATE(Date, '%d-%b-%y'), '%Y-%m') AS Month,
@@ -98,9 +137,16 @@ ORDER BY Month;
 
 <img width="306" height="245" alt="image" src="https://github.com/user-attachments/assets/13eda099-6b51-46d1-afdd-06ee00ba49de" />
 
-Query-7
+Insight: Sales and orders peak in January and remain strong through March, showing a post-New Year sales surge.
 
--- States contributing the most revenue
+Next Step: Prepare inventory and targeted campaigns ahead of Q1, and analyze reasons for any seasonal dips after March for smoother sales across all months.
+
+
+Query 7: States Contributing the Most Revenue
+
+Question: Which states contribute the most to revenue, and how do we allocate resources regionally?
+
+Business Goal: Focus marketing and operations investments on high-performing states to boost sales.
 
 SELECT 
     State, SUM(Amount) AS Total_Revenue
@@ -112,9 +158,16 @@ LIMIT 5;
 
 <img width="306" height="141" alt="image" src="https://github.com/user-attachments/assets/08d9d58a-7e42-4a97-b819-a7f93340f13c" />
 
-Query-8
+Insight: Delhi and Karnataka lead in revenue, with Delhi significantly ahead. Maharashtra lags among the top five.
 
--- How much each product category is contributing
+Next Step: Direct more promotional efforts in Delhi and Karnataka, and re-evaluate strategies for states with lower revenue.
+
+
+Query 8: Product Category Contribution
+
+Question: What share of revenue and orders does each product category contribute, and how can we balance our portfolio?
+
+Business Goal: Adjust product mix and marketing focus to maximize profitability.
 
 SELECT 
     Product_Category,
@@ -126,9 +179,16 @@ ORDER BY Category_Revenue DESC;
 
 <img width="425" height="157" alt="image" src="https://github.com/user-attachments/assets/0b95479f-df70-42c8-81f2-26185d3982da" />
 
-Query-9
+Insight: Footwear & Shoes drives the highest revenue and orders. Auto is a distant second.
 
--- Age groups spending the most
+Next Step: Focus inventory and ads around top-performing categories. Review performance of lower-revenue categories.
+
+
+Query 9: Age Groups Spending the Most
+
+Question: Which customer age groups drive the highest spending, and how should we tailor marketing?
+
+Business Goal: Target age demographics with relevant offers to enhance conversion rates.
 
 SELECT 
     `Age Group`,
@@ -140,9 +200,17 @@ ORDER BY Total_Sales DESC;
 
 <img width="351" height="206" alt="image" src="https://github.com/user-attachments/assets/2328f779-868e-492e-ad1a-1d56a6a55ee1" />
 
-Query-10
+Insight: Customers aged 26–35 and 36–45 are the biggest spenders. Younger and older groups contribute less.
 
--- Comparing zones
+Next Step: Tailor marketing campaigns toward the 26–45 age segments to maximize sales impact.
+
+
+Query 10: Comparing Zones by Revenue
+
+Question: How does revenue and order volume compare across zones, and which underperforming zones need attention?
+
+Business Goal: Expand market penetration and address weaknesses in low-performing regions.
+
 SELECT 
     Zone, COUNT(*) AS Total_Orders, SUM(Amount) AS Total_Revenue
 FROM
@@ -152,9 +220,16 @@ ORDER BY Total_Revenue DESC;
 
 <img width="339" height="140" alt="image" src="https://github.com/user-attachments/assets/b4287119-2ad6-45dd-908f-7dd30f189201" />
 
-Query-11
+Insight: Central and Southern zones dominate both revenue and order counts. Eastern zone shows minimal activity.
 
--- Calculating AOV (Average order value)
+Next Step: Expand successful strategies from Central and Southern zones to weaker zones.Investigate causes for low Eastern zone performance.
+
+
+Query 11: Calculating Average Order Value (AOV)
+
+Question: What is the average order value, and what strategies can increase it?
+
+Business Goal: Improve profitability by encouraging larger or higher-value transactions.
 
 SELECT 
     SUM(Amount) / SUM(Orders) AS Average_Order_Value
@@ -163,9 +238,16 @@ FROM
 
 <img width="231" height="70" alt="image" src="https://github.com/user-attachments/assets/615b81e4-21b8-45e0-99ec-8c89f974cea5" />
 
-Query-12
+Insight: The average order value is ₹8,759.66, indicating generally high-value purchases across all transactions.
 
--- Marital status impact on buying (0=Single, 1=Married)
+Next Step: Encourage larger basket sizes through bundling or discount offers, aiming to increase AOV further.
+
+
+Query 12: Marital Status Impact on Buying
+
+Question: How does marital status influence buying behavior and revenue contribution?
+
+Business Goal: Develop targeted campaigns that resonate with key customer segments.
 
 SELECT 
     Marital_Status,
@@ -177,9 +259,16 @@ GROUP BY Marital_Status;
 
 <img width="399" height="102" alt="image" src="https://github.com/user-attachments/assets/aed10be8-69c4-4647-b770-3fa806447b2f" />
 
-Query-13
+Insight: Singles (Marital_Status=0) place more orders and generate higher revenue than married customers.
 
--- how many customers stick around 
+Next Step: Target singles with tailored marketing campaigns and promotions to further drive sales.
+
+
+Query 13: How Many Customers Stick Around (Repeat vs One-Time)
+
+Question: What proportion of customers are repeat buyers versus one-time purchasers, and how can we increase retention?
+
+Business Goal: Grow customer loyalty to boost recurring sales.
 
 SELECT 
     CASE
@@ -200,9 +289,16 @@ GROUP BY Customer_Type;
 
 <img width="435" height="75" alt="image" src="https://github.com/user-attachments/assets/1636d9d9-06c5-4db5-a72a-4c76907c4d17" />
 
-Query-14
+Insight: Most customers are one-time buyers (253), but repeat customers (19) contribute substantial revenue.
 
--- Identify Bestseller products
+Next Step: Launch retention strategies and loyalty programs to convert more one-time buyers into repeat buyers.
+
+
+Query 14: Identify Bestseller Products
+
+Question: Which products are bestsellers, and how can we promote them to maximize revenue?
+
+Business Goal: Focus sales and marketing efforts on high-performing products.
 
 SELECT 
     Product_ID,
@@ -216,9 +312,16 @@ LIMIT 10;
 
 <img width="351" height="244" alt="image" src="https://github.com/user-attachments/assets/b5fe9a19-70ca-4e6a-bd21-ed64f70b6857" />
 
-Query-15
+Insight: Only a few products are ordered frequently (top products have 3 orders each), but with significant revenue.
 
--- Revenue by occupation
+Next Step: Promote top-performing products more aggressively and analyze why other products aren’t bestsellers.
+
+
+Query 15: Revenue by Occupation
+
+Question: How does customer occupation impact purchases, and which occupations present growth opportunities?
+
+Business Goal: Target marketing and product offerings to high-value occupational segments.
 
 SELECT 
     Occupation,
@@ -231,9 +334,16 @@ ORDER BY Total_Revenue DESC;
 
 <img width="416" height="239" alt="image" src="https://github.com/user-attachments/assets/27ac77c4-7f62-4701-9a7a-d84e7bd13ad6" />
 
-Query-16
+Insight: IT Sector and Aviation occupations generate the highest orders and revenue.
 
--- Orders by Gender and Zone
+Next Step: Focus marketing and partnerships on high-spending occupations to increase market share in these groups.
+
+
+Query 16: Orders by Gender and Zone
+
+Question: How do order patterns differ by gender across zones, and where should we focus gender-targeted marketing?
+
+Business Goal: Refine campaigns by gender and geography to improve order volumes.
 
 SELECT 
     Gender, Zone, COUNT(*) AS Orders, SUM(Amount) AS Revenue
@@ -244,9 +354,16 @@ ORDER BY Zone , Gender;
 
 <img width="321" height="237" alt="image" src="https://github.com/user-attachments/assets/96886d6c-dbc4-4c05-abec-7d89263bb659" />
 
-Query-17
+Insight: Females in the Central zone drive the highest number of orders and revenue, with the Southern zone also strong.
 
--- Best customer by state
+Next Step: Target Central zone females for campaigns and expand successful tactics to other gender-zone segments.
+
+
+Query 17: Best Customer by State
+
+Question: Who are the top-spending customers in each state, and how can we recognize and retain them?
+
+Business Goal: Enhance loyalty programs and personalized engagement for key state-level customers.
 
 WITH State_Customers AS (
     SELECT 
@@ -268,9 +385,16 @@ ORDER BY State;
 
 <img width="342" height="244" alt="image" src="https://github.com/user-attachments/assets/2cdd4603-658a-448b-996c-54761a94fade" />
 
-Query-18
+Insight: Each state’s top customer is responsible for the largest spending, with significant revenue concentration.
 
--- Average order value across zones
+Next Step: Set up personalized outreach and special rewards for state-level top customers to ensure loyalty.
+
+
+Query 18: Average Order Value Across Zones
+
+Question: What is the average order value in each zone, and how can zones with lower AOV improve?
+
+Business Goal: Drive higher-value purchases through zone-specific strategies.
 
 SELECT 
     Zone, SUM(Amount) / SUM(Orders) AS Average_Order_Value
@@ -281,9 +405,16 @@ ORDER BY Average_Order_Value DESC;
 
 <img width="282" height="139" alt="image" src="https://github.com/user-attachments/assets/a3047150-9b43-4677-bec0-06bf4238aea2" />
 
-Query-19
+Insight: Central zone leads in average order value, followed by Western and Southern. Eastern lags behind.
 
--- Sales momentum tracker (cumulative sales)
+Next Step: Analyze and replicate high AOV drivers in other zones, especially in low-performance areas like Eastern.
+
+
+Query 19: Sales Momentum Tracker (Cumulative Sales)
+
+Question: What is the daily sales momentum, and how can we sustain or accelerate it?
+
+Business Goal: Maintain steady growth through timely interventions and campaigns.
 
 SELECT 
     STR_TO_DATE(Date, '%d-%b-%y') AS Sales_Date,
@@ -295,9 +426,16 @@ ORDER BY Sales_Date;
 
 <img width="399" height="237" alt="image" src="https://github.com/user-attachments/assets/4e93a2a8-7691-4010-ac3e-96f95460c219" />
 
-Query-20
+Insight: Cumulative revenue grows steadily, indicating consistent daily sales momentum in January 2025.
 
--- Show top rated products 
+Next Step: Monitor for any dips in momentum and plan campaigns or offers to sustain and boost daily sales.
+
+
+Query 20: Top Rated Products
+
+Question: Which products have the highest customer ratings, and how can we leverage their reputation?
+
+Business Goal: Use customer satisfaction insights to boost sales and product development.
 
 SELECT 
     ps.product_id, ps.product_Category, pr.rating
@@ -310,9 +448,16 @@ WHERE
 
 <img width="364" height="243" alt="image" src="https://github.com/user-attachments/assets/c545dc3f-acad-49fb-986c-d72d74f672a0" />
 
-Query-21
+Insight: Auto category dominates among products rated 5, with Hand & Power Tools only appearing once.
 
--- Customer at risk of churning (who has not ordered from last 3 momnths)
+Next Step: Leverage high-rated Auto products in marketing. Investigate how to improve ratings in other categories.
+
+
+Query 21: Customers at Risk of Churning (Not Ordered in Last 3 Months)
+
+Question: Which customers have not ordered recently and are at risk of churn?
+
+Business Goal: Implement win-back campaigns to reduce customer attrition.
 
 SELECT 
     s.User_ID,
@@ -328,9 +473,16 @@ HAVING
 
 <img width="350" height="249" alt="image" src="https://github.com/user-attachments/assets/c29d784f-ce35-4d82-ab40-95ca7bdcf775" />
 
-Query-22
+Insight: Several customers haven't placed orders since January 2025, indicating potential churn risk.
 
--- Customer Segmentation (By- Age,Gender)
+Next Step: Initiate win-back campaigns (e.g., emails or special offers) targeting these inactive customers.
+
+
+Query 22: Customer Segmentation by Age and Gender
+
+Question: How is our customer base distributed by age and gender, and how can segmentation improve marketing effectiveness?
+
+Business Goal: Deliver tailored promotions that resonate with specific segments.
 
 SELECT 
     `Age Group`, 
@@ -343,9 +495,16 @@ GROUP BY
 
 <img width="308" height="238" alt="image" src="https://github.com/user-attachments/assets/9b5678d2-21fc-4ae0-9db8-8b1845cd2c9a" />
 
-Query-23
+Insight: Age 26–35 males and females are the largest customer segments.
 
--- Get total orders and average product rating for each product
+Next Step: Tailor targeted promotions for the 26–35 age group, focusing on both genders for maximum impact.
+
+
+Query 23: Total Orders and Average Rating per Product
+
+Question: Which products combine high order volume with strong ratings, and which need improvement?
+
+Business Goal: Highlight successful products and address quality issues to enhance sales.
 
 SELECT 
     o.Product_ID,
@@ -360,11 +519,18 @@ GROUP BY
 ORDER BY 
     order_count DESC;
 
-<img width="311" height="238" alt="image" src="https://github.com/user-attachments/assets/ffda4023-2f99-4c86-a492-8be6dfd46c31" />8
+<img width="311" height="238" alt="image" src="https://github.com/user-attachments/assets/ffda4023-2f99-4c86-a492-8be6dfd46c31" />
 
-Query-24
+Insight: Some products (like P00110942) combine high order counts with perfect ratings; others lag behind.
 
--- Identifying Duplicate Orders
+Next Step: Feature best-performing products more prominently. Review and address complaints for lower-rated products.
+
+
+Query 24: Identifying Duplicate Orders
+
+Question: Are there duplicate orders in the system, and how can we ensure data integrity?
+
+Business Goal: Prevent data errors that could distort reporting and operational decisions.
 
 SELECT 
     User_ID, Product_ID, Date, COUNT(*)
@@ -375,15 +541,26 @@ HAVING COUNT(*) > 1;
 
 <img width="355" height="117" alt="image" src="https://github.com/user-attachments/assets/2a5c25a8-c05a-4ea8-b8bb-c12dcf7a2070" />
 
-Query-25
+Insight: Some user-product-date combinations have duplicate orders, possibly indicating system or data issues.
 
--- Locating Null Values
+Next Step: Investigate and resolve root causes of duplicates. Add order integrity checks to the process.
+
+
+Query 25: Locating Null Values
+
+Question: Where are the null or missing values in critical data fields, and how can we improve data quality?
+
+Business Goal: Clean and maintain high-quality data for reliable analytics and decision-making.
 
 SELECT * 
 FROM `project sales`
 WHERE Date IS NULL OR User_ID IS NULL OR Amount IS NULL;
 
 <img width="1228" height="187" alt="image" src="https://github.com/user-attachments/assets/429fecdc-5420-407c-955b-81dd876ab9e3" />
+
+Insight: The dataset contains some nulls in key fields like Date, User_ID, or Amount.
+
+Next Step: Clean data by correcting or excluding null-value records and improve data entry checks to prevent future issues.
 
 
 
