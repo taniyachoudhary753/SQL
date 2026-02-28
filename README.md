@@ -567,6 +567,16 @@ WHERE Date IS NULL OR User_ID IS NULL OR Amount IS NULL;
 
 <img width="1228" height="187" alt="image" src="https://github.com/user-attachments/assets/429fecdc-5420-407c-955b-81dd876ab9e3" />
 
+Key Business Outcomes
+
+-Identified top revenue-driving product categories and regions.
+
+-Detected high-value and churn-risk customers.
+
+-Analyzed seasonal sales trends to support inventory planning.
+
+-Improved data reliability by identifying duplicates and null values.
+
 
 
 
