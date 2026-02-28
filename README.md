@@ -1,9 +1,20 @@
-" Sales Data Insights & Customer Analytics using SQL "
+Project Objective
 
+To analyze retail transactional sales data using SQL in order to generate insights related to revenue performance, customer behavior, regional contribution, churn risk, and product optimization.
 
-Project Summary:
+Tools Used
 
-“ Developed a comprehensive SQL-based analytics project analyzing transactional sales data for a retail domain. Designed and executed complex queries to generate actionable business insights covering sales trends, customer segmentation, product performance, churn prediction, and regional analysis. Provided clear recommendations to drive sales, optimize inventory, and improve customer retention. ”
+SQL (MySQL)
+
+Data Cleaning & Validation Techniques
+
+Analytical Functions (Window functions, Aggregations, CTEs)
+
+Dataset Overview
+
+Transaction-level retail sales dataset
+
+Includes customer demographics, product details, regional data, order dates, and ratings
 
 
 
